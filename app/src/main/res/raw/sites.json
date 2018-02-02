@@ -1,0 +1,33 @@
+{
+  "sites": [
+    {
+      "name":"Jabong",
+      "url":"https://m.jabong.com/",
+      "cart_url":"https://m.jabong.com/cart/",
+      "coupon_url":"https://m.jabong.com/cart/coupon/",
+      "coupon_code":1,
+      "coupons":[],
+      "actions":{
+        "open_coupon_window":"javascript:$('.have-a-coupon').click()",
+        "enter_coupon_code":"javascript:$('#applyCoupon').val('",
+        "apply_coupon":"javascript:$('.jbApplyCoupon').click()",
+        "get_total_price":"javascript:window.AutoCoupon.parseData($('.rupee').text())"
+      }
+
+    },
+    {
+      "name":"Myntra",
+      "url":"https://www.myntra.com/",
+      "cart_url":"https://www.myntra.com/checkout/cart",
+      "coupon_url":"https://www.myntra.com/checkout/cart",
+      "coupon_code":2,
+      "coupons":[],
+      "actions":{
+        "open_coupon_window":"javascript:document.querySelector('.apply-coupon').click()",
+        "enter_coupon_code":"javascript:document.querySelector('.enter-coupon').value = '",
+        "apply_coupon":"javascript:document.querySelector('.btn-apply').click()",
+        "get_total_price":"javascript:javascript:window.AutoCoupon.parseData(document.querySelectorAll('.total-rupees')[4].innerText)"
+      }
+    }
+  ]
+}
